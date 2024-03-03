@@ -4,12 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-userinformation',
   standalone: true,
   imports: [],
-  templateUrl: './userinformation.component.html',
-  styleUrl: './userinformation.component.scss'
+  templateUrl: './userinformationpage.component.html',
+  styleUrl: './userinformationpage.component.scss'
 })
 export class UserinformationComponent {
-saveUser() {
-throw new Error('Method not implemented.');
-}
 
 }
