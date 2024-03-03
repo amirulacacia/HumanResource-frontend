@@ -3,6 +3,19 @@
     <h2>User Information</h2>
     <form>
         <div>
+            <label for="title">Title:</label>
+            <select id="title" name="title" required>
+                <option value="" disabled selected>Select Title</option>
+                <option value="Mr.">Mr</option>
+                <option value="Mrs.">Mrs</option>
+                <option value="Ms">Ms</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr">Dr</option>
+                <option value="Prof">Prof</option>
+            </select>
+        </div>
+        <br>
+        <div>
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" pInputText class="w-full mb-3" required>
         </div>
@@ -19,21 +32,10 @@
             <input type="email" id="email" name="email" pInputText class="w-full mb-3" required>
         </div>
         <div>
-            <label for="title">Title:</label>
-            <select id="title" name="title" required>
-                <option value="" disabled selected>Select Title</option>
-                <option value="Mr.">Mr</option>
-                <option value="Mrs.">Mrs</option>
-                <option value="Ms">Ms</option>
-                <option value="Miss">Miss</option>
-                <option value="Dr">Dr</option>
-                <option value="Prof">Prof</option>
-            </select>
-        </div>
-        <div>
             <label for="contactNumber">Contact Number:</label>
             <input type="tel" id="contactNumber" name="contactNumber" required>
         </div>
+        <br>
         <button type="submit">Save</button>
     </form>
   </div>
