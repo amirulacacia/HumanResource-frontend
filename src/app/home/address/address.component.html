@@ -1,65 +1,66 @@
 <!-- user-address.component.html -->
 <div class="user-address">
-    <h2>User Address</h2>
-    <form (ngSubmit)="saveUserAddress()" #userForm="ngForm">
-      <div>
-        <label for="country">Country:</label>
-        <select id="country" name="country" [(ngModel)]="user.country" required>
-          <option value="" disabled selected>Select Country</option>
-            <option value="SG">Singapore</option>
-            <option value="ID">Indonesia</option>
-            <option value="TH">Thailand</option>
-            <option value="BN">Brunei</option>
-            <option value="PH">Philippines</option>
-            <option value="VN">Vietnam</option>
-            <option value="KH">Cambodia</option>
-            <option value="LA">Laos</option>
-            <option value="MY">Malaysia</option>
-        </select>
-      </div>
-      <div>
-        <label for="state">State:</label>
-        <select id="state" name="state" [(ngModel)]="user.state" required>
-          <option value="" disabled selected>Select State</option>
-            <option value="JHR">Johor</option>
-            <option value="KDH">Kedah</option>
-            <option value="KTN">Kelantan</option>
-            <option value="MLK">Melaka</option>
-            <option value="NSN">Negeri Sembilan</option>
-            <option value="PHG">Pahang</option>
-            <option value="PRK">Perak</option>
-            <option value="PLS">Perlis</option>
-            <option value="PNG">Penang</option>
-            <option value="SBH">Sabah</option>
-            <option value="SWK">Sarawak</option>
-            <option value="SGR">Selangor</option>
-            <option value="TRG">Kuala Terengganu</option>
-            <option value="KUL">Kuala Lumpur</option>
-            <option value="LBN">Labuan</option>
-            <option value="PJY">Putrajaya</option>
-        </select>
-      </div>
-      <div>
-        <label for="postcode">Postcode:</label>
-        <input type="text" id="postcode" name="postcode" [(ngModel)]="user.postcode" required>
-      </div>
-      <div>
-        <label for="addressLine1">Address Line 1:</label>
-        <input type="text" id="addressLine1" name="addressLine1" [(ngModel)]="user.addressLine1" required>
-      </div>
-      <div>
-        <label for="addressLine2">Address Line 2:</label>
-        <input type="text" id="addressLine2" name="addressLine2" [(ngModel)]="user.addressLine2">
-      </div>
-      <div>
-        <label for="addressLine3">Address Line 3:</label>
-        <input type="text" id="addressLine3" name="addressLine3" [(ngModel)]="user.addressLine3">
-      </div>
-      <div>
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" [(ngModel)]="user.city" required>
-      </div>
-      <button type="submit" [disabled]="!userForm.form.valid">Save</button>
-    </form>
-  </div>
-  
+  <h2>User Address</h2>
+  <form>
+    <div>
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="" disabled selected>Select Country</option>
+          <option value="SG">Singapore</option>
+          <option value="ID">Indonesia</option>
+          <option value="TH">Thailand</option>
+          <option value="BN">Brunei</option>
+          <option value="PH">Philippines</option>
+          <option value="VN">Vietnam</option>
+          <option value="KH">Cambodia</option>
+          <option value="LA">Laos</option>
+          <option value="MY">Malaysia</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="state">State:</label>
+      <select id="state" name="state" required>
+        <option value="" disabled selected>Select State</option>
+          <option value="JHR">Johor</option>
+          <option value="KDH">Kedah</option>
+          <option value="KTN">Kelantan</option>
+          <option value="MLK">Melaka</option>
+          <option value="NSN">Negeri Sembilan</option>
+          <option value="PHG">Pahang</option>
+          <option value="PRK">Perak</option>
+          <option value="PLS">Perlis</option>
+          <option value="PNG">Penang</option>
+          <option value="SBH">Sabah</option>
+          <option value="SWK">Sarawak</option>
+          <option value="SGR">Selangor</option>
+          <option value="TRG">Kuala Terengganu</option>
+          <option value="KUL">Kuala Lumpur</option>
+          <option value="LBN">Labuan</option>
+          <option value="PJY">Putrajaya</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" pInputText class="w-full mb-3" required>
+    </div>
+    <div>
+      <label for="postcode">Postcode:</label>
+      <input type="text" id="postcode" name="postcode" pInputText class="w-full mb-3" required>
+    </div>
+    <div>
+      <label for="addressLine1">Address Line 1:</label>
+      <input type="text" id="addressLine1" name="addressLine1" pInputText class="w-full mb-3" required>
+    </div>
+    <div>
+      <label for="addressLine2">Address Line 2:</label>
+      <input type="text" id="addressLine2" name="addressLine2" pInputText class="w-full mb-3">
+    </div>
+    <div>
+      <label for="addressLine3">Address Line 3:</label>
+      <input type="text" id="addressLine3" name="addressLine3" pInputText class="w-full mb-3">
+    </div>
+    <button type="submit">Save</button>
+  </form>
+</div>

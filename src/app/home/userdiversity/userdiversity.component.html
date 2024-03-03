@@ -1,30 +1,32 @@
 <!-- user-diversity.component.html -->
 <div class="user-diversity">
-    <h2>User Diversity Information</h2>
-    <form (ngSubmit)="saveUserDiversity()">
-      <div>
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender" [(ngModel)]="user.gender" required>
-          <option value="" disabled selected>Select Gender</option>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-        </select>
-      </div>
-      <div>
-        <label for="birthDate">Birth Date:</label>
-        <input type="date" id="birthDate" name="birthDate" [(ngModel)]="user.birthDate" required>
-      </div>
-      <div>
-        <label for="maritalStatus">Marital Status:</label>
-        <select id="maritalStatus" name="maritalStatus" [(ngModel)]="user.maritalStatus" required>
-          <option value="" disabled selected>Select Marital Status</option>
-          <option value="Single">Single</option>
-          <option value="Married">Married</option>
-          <option value="Divorced">Divorced</option>
-          <option value="Widowed">Widowed</option>
-        </select>
-      </div>
-      <button type="submit">Save</button>
-    </form>
-  </div>
-  
+  <h2>User Diversity Information</h2>
+  <form>
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender"required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="birthDate">Birth Date:</label>
+      <input type="date" id="birthDate" name="birthDate" required>
+    </div>
+    <br>
+    <div>
+      <label for="maritalStatus">Marital Status:</label>
+      <select id="maritalStatus" name="maritalStatus" required>
+        <option value="" disabled selected>Select Marital Status</option>
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+        <option value="Divorced">Divorced</option>
+        <option value="Widowed">Widowed</option>
+      </select>
+    </div>
+    <br>
+    <button type="submit">Save</button>
+  </form>
+</div>

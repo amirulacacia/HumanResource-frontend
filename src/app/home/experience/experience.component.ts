@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StepsModule } from 'primeng/steps';
 
 @Component({
   selector: 'app-experience',
@@ -8,8 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
-saveUserExperience() {
-throw new Error('Method not implemented.');
-}
 
 }

@@ -1,52 +1,60 @@
 <!-- user-education.component.html -->
 <div class="user-education">
-    <h2>User Education</h2>
-    <form (ngSubmit)="saveUserEducation()" #userForm="ngForm">
-      <div>
-        <label for="educationLevel">Education Level:</label>
-        <select id="educationLevel" name="educationLevel" [(ngModel)]="user.educationLevel" required>
-          <option value="" disabled selected>Select Education Level</option>
-          <option value="SPM">High School Diploma</option>
-          <option value="High School Diploma">High School Diploma</option>
-          <option value="Associate Degree">Associate Degree</option>
-          <option value="Bachelor's Degree">Bachelor's Degree</option>
-          <option value="Master's Degree">Master's Degree</option>
-          <option value="PhD">PhD</option>
-        </select>
-      </div>
-      <div>
-        <label for="major">Major:</label>
-        <input type="text" id="major" name="major" [(ngModel)]="user.major" required>
-      </div>
-      <div>
-        <label for="schoolName">School Name:</label>
-        <input type="text" id="schoolName" name="schoolName" [(ngModel)]="user.schoolName" required>
-      </div>
-      <div>
-        <label for="startDate">Start Date:</label>
-        <input type="date" id="startDate" name="startDate" [(ngModel)]="user.startDate" required>
-      </div>
-      <div>
-        <label for="endDate">End Date:</label>
-        <input type="date" id="endDate" name="endDate" [(ngModel)]="user.endDate" required>
-      </div>
-      <div>
-        <label for="cgpa">CGPA:</label>
-        <input type="text" id="cgpa" name="cgpa" [(ngModel)]="user.cgpa">
-      </div>
-      <div>
-        <label for="graduationYear">Graduation Year:</label>
-        <select id="graduationYear" name="graduationYear" [(ngModel)]="user.graduationYear" required>
-          <option value="" disabled selected>Select Graduation Year</option>
-          <option value="2025">2019</option>
-          <option value="2025">2020</option>
-          <option value="2025">2021</option>
-          <option value="2022">2022</option>
-          <option value="2023">2023</option>
-          <option value="2024">2024</option>
-        </select>
-      </div>
-      <button type="submit" [disabled]="!userForm.form.valid">Save</button>
-    </form>
-  </div>
-  
+  <h2>User Education</h2>
+  <form>
+    <div>
+      <label for="educationLevel">Education Level:</label>
+      <select id="educationLevel" name="educationLevel" required>
+        <option value="" disabled selected>Select Education Level</option>
+        <option value="SPM">High School Diploma</option>
+        <option value="Diploma">High School Diploma</option>
+        <option value="Associate Degree">Associate Degree</option>
+        <option value="Bachelor's Degree">Bachelor's Degree</option>
+        <option value="Master's Degree">Master's Degree</option>
+        <option value="PhD">PhD</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="major">Major:</label>
+      <input type="text" id="major" name="major" pInputText class="w-full mb-3" required>
+    </div>
+    <div>
+      <label for="schoolName">School Name:</label>
+      <input type="text" id="schoolName" name="schoolName" pInputText class="w-full mb-3" required>
+    </div>
+    <div>
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" name="startDate" required>
+    </div>
+    <br>
+    <div>
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" name="endDate" required>
+    </div>
+    <br>
+    <div>
+      <label for="cgpa">CGPA:</label>
+      <input type="text" id="cgpa" name="cgpa" pInputText class="w">
+    </div>
+    <br>
+    <div>
+      <label for="graduationYear">Graduation Year:</label>
+      <select id="graduationYear" name="graduationYear" required>
+        <option value="" disabled selected>Select Graduation Year</option>
+        <option value="2025">2015</option>
+        <option value="2025">2016</option>
+        <option value="2025">2017</option>
+        <option value="2025">2018</option>
+        <option value="2025">2019</option>
+        <option value="2025">2020</option>
+        <option value="2025">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+      </select>
+    </div>
+    <br>
+    <button type="submit">Save</button>
+  </form>
+</div>

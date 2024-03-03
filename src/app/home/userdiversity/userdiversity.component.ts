@@ -8,9 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './userdiversity.component.scss'
 })
 export class UserdiversityComponent {
-user: any;
-saveUserDiversity() {
-throw new Error('Method not implemented.');
-}
 
 }

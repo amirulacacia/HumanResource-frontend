@@ -1,20 +1,21 @@
 <!-- user-documents.component.html -->
 <div class="user-documents">
-    <h2>User Documents</h2>
-    <form (ngSubmit)="saveUserDocuments()" #userForm="ngForm">
-      <div>
-        <label for="resume">Upload Resume:</label>
-        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" (change)="onResumeChange($event)" required>
-      </div>
-      <div>
-        <label for="coverLetter">Upload Cover Letter:</label>
-        <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx" (change)="onCoverLetterChange($event)" required>
-      </div>
-      <div>
-        <label for="link">Link:</label>
-        <input type="url" id="link" name="link" placeholder="Enter link (if any)" [(ngModel)]="user.link">
-      </div>
-      <button type="submit" [disabled]="!userForm.form.valid">Save</button>
-    </form>
-  </div>
-  
+  <h2>User Documents</h2>
+  <form>
+    <div>
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"  required>
+    </div>
+    <br>
+    <div>
+      <label for="coverLetter">Upload Cover Letter:</label>
+      <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx" required>
+    </div>
+    <br>
+    <div>
+      <label for="link">Link:</label>
+      <input type="url" id="link" name="link" placeholder="Enter link (if any)" pInputText class="w-full mb-3">
+    </div>
+    <button type="submit">Save</button>
+  </form>
+</div>

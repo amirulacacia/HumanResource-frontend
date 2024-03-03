@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-additionalinfo',
+  selector: 'app-additional-info',
   standalone: true,
   imports: [],
   templateUrl: './additionalinfo.component.html',
   styleUrl: './additionalinfo.component.scss'
 })
-export class AdditionalinfoComponent {
-saveAdditionalInfo() {
-throw new Error('Method not implemented.');
-}
+export class AdditionalInfoComponent {
 
 }

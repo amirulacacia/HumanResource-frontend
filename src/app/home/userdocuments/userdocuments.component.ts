@@ -8,8 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './userdocuments.component.scss'
 })
 export class UserdocumentsComponent {
-saveUserDocuments() {
-throw new Error('Method not implemented.');
-}
 
 }

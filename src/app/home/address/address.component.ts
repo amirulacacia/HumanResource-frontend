@@ -8,8 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './address.component.scss'
 })
 export class AddressComponent {
-saveUserAddress() {
-throw new Error('Method not implemented.');
-}
 
 }
