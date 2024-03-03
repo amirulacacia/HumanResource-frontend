@@ -1,0 +1,20 @@
+<!-- additional-info.component.html -->
+<div class="additional-info">
+    <h2>Additional Information</h2>
+    <form (ngSubmit)="saveAdditionalInfo()" #userForm="ngForm">
+      <div>
+        <label for="relocate">Are you willing to relocate?</label>
+        <input type="checkbox" id="relocate" name="relocate" [(ngModel)]="user.relocate">
+      </div>
+      <div>
+        <label for="expectedSalary">Expected Salary:</label>
+        <input type="number" id="expectedSalary" name="expectedSalary" [(ngModel)]="user.expectedSalary">
+      </div>
+      <div>
+        <label for="noticePeriod">Notice Period:</label>
+        <input type="text" id="noticePeriod" name="noticePeriod" [(ngModel)]="user.noticePeriod">
+      </div>
+      <button type="submit" [disabled]="!userForm.form.valid">Save</button>
+    </form>
+  </div>
+  

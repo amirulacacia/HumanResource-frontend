@@ -1,0 +1,15 @@
+<!-- user-certificates.component.html -->
+<div class="user-certificates">
+    <h2>User Certificates</h2>
+    <form (ngSubmit)="saveUserCertificates()" #userForm="ngForm">
+      <div *ngFor="let certificate of certificates; let i = index">
+        <div>
+          <label for="certificate{{i}}">Certificate {{i + 1}}:</label>
+          <input type="text" id="certificate{{i}}" name="certificate{{i}}" [(ngModel)]="certificates[i]" required>
+        </div>
+      </div>
+      <button type="button" (click)="addCertificate()">Add Certificate</button>
+      <button type="submit" [disabled]="!userForm.form.valid">Save</button>
+    </form>
+  </div>
+  
