@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="login-container">
+  <h2>Login</h2>
+  <div class="login-form">
+    <div class="user-type">
+      <label>
+        <input type="radio" name="userType" value="applicant" (change)="userType = 'applicant'"> Applicant
+      </label>
+      <label>
+        <input type="radio" name="userType" value="admin" (change)="userType = 'admin'"> Admin
+      </label>
+    </div>
+    <div *ngIf="userType === 'applicant'" class="form-group">
+      <label>Email:</label>
+      <input type="email" #emailInput required>
+    </div>
+    <div *ngIf="userType === 'applicant'" class="form-group">
+      <label>Password:</label>
+      <input type="password" #passwordInput required>
+    </div>
+    <div *ngIf="userType === 'admin'" class="form-group">
+      <label>Job ID:</label>
+      <input type="text" #jobIdInput required>
+    </div>
+    <div *ngIf="userType === 'admin'" class="form-group">
+      <label>Password:</label>
+      <input type="password" #passwordInput required>
+    </div>
+    <button (click)="login()">Login</button>
+  </div>
+</div>
