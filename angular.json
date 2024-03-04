@@ -30,7 +30,8 @@
               "src/assets",
               "src/manifest.webmanifest"
             ],
-            "styles": [
+            "styles": [ 
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": [],

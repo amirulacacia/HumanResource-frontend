@@ -4,15 +4,15 @@ import { LoginComponent } from './home/login/login.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { HeaderComponent } from './home/header/header.component';
 import { ReferencesComponent } from './home/references/references.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { AdditionalInfoComponent } from './additional-info/additional-info.component';
-import { AddressComponent } from './address/address.component';
-import { EducationComponent } from './education/education.component';
-import { UserdiversityComponent } from './userdiversity/userdiversity.component';
-import { UserdocumentsComponent } from './userdocuments/userdocuments.component';
-import { UserinformationComponent } from './userinformation/userinformation.component';
+import { ExperienceComponent } from './user_info/experience/experience.component';
+import { AdditionalInfoComponent } from './user_info/additionalinfo/additionalinfo.component';
+import { AddressComponent } from './user_info/address/address.component';
+import { EducationComponent } from './user_info/education/education.component';
+import { UserdiversityComponent } from './user_info/userdiversity/userdiversity.component';
+import { UserdocumentsComponent } from './user_info/userdocuments/userdocuments.component';
+import { UserinformationComponent } from './user_info/userinformation/userinformationpage.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'header', component: HeaderComponent },
@@ -26,9 +26,3 @@ const routes: Routes = [
   { path: 'userinformation', component: UserinformationComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
