@@ -1,10 +1,11 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
+import { NavBarComponent } from '../nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, NavBarComponent],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
