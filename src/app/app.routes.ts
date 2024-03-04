@@ -8,6 +8,6 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'header', component: HeaderComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  // { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'job_posting', component:JobPostingComponent}
 ];
