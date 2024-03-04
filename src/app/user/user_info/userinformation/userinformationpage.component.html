@@ -1,10 +1,13 @@
-<!-- user-information.component.html -->
-<div class="user-info">
-    <h2>User Information</h2>
-    <form>
-        <div>
-            <label for="title">Title:</label>
-            <select id="title" name="title" required>
+<div class="container">
+    <h2>USER INFORMATION</h2>
+    <form action="action_page.php">
+
+        <div class="row">
+            <div class="col-25">
+              <label for="title">Title</label>
+            </div>
+            <div class="col-75">
+              <select id="title" name="title">
                 <option value="" disabled selected>Select Title</option>
                 <option value="Mr.">Mr</option>
                 <option value="Mrs.">Mrs</option>
@@ -12,31 +15,58 @@
                 <option value="Miss">Miss</option>
                 <option value="Dr">Dr</option>
                 <option value="Prof">Prof</option>
-            </select>
+              </select>
+            </div>
+          </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
         </div>
-        <br>
-        <div>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" pInputText class="w-full mb-3" required>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
         </div>
-        <div>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" pInputText class="w-full mb-3" required>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="mname">Middle Name</label>
         </div>
-        <div>
-            <label for="middleName">Middle Name:</label>
-            <input type="text" id="middleName" name="middleName" pInputText class="w-full mb-3">
+        <div class="col-75">
+          <input type="text" id="mname" name="middlename" placeholder="Your middle name..">
         </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" pInputText class="w-full mb-3" required>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
         </div>
-        <div>
-            <label for="contactNumber">Contact Number:</label>
-            <input type="tel" id="contactNumber" name="contactNumber" required>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
         </div>
-        <br>
-        <button type="submit">Save</button>
+      </div>
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Your email..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="contactNo">Contact Number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="contactNo" name="contactNo" placeholder="Your cotact number..">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Save">
+      </div>
     </form>
   </div>
   

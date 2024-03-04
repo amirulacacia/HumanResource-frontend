@@ -1,21 +1,46 @@
-<!-- user-documents.component.html -->
-<div class="user-documents">
-  <h2>User Documents</h2>
-  <form>
-    <div>
-      <label for="resume">Upload Resume:</label>
-      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"  required>
-    </div>
+<div class="container">
+  <h2>DOCUMENTS</h2>
+  <form action="action_page.php">
+
+      <div class="row">
+          <div class="col-25">
+            <label for="resume">Upload Resume</label>
+          </div>
+          <div class="col-75">
+            <form action="/action_page.php">
+              <input type="file" id="resume" name="resume">
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="coverletter">Cover Letter</label>
+          </div>
+          <div class="col-75">
+            <form action="/action_page.php">
+              <input type="file" id="coverletter" name="coverletter">
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="link">Link</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="link" name="link" placeholder="Link 1 (if any)">
+          </div>
+          <div class="col-75">
+            <input type="text" id="link" name="link" placeholder="Link 2 (if any)">
+          </div>
+        </div>
+
     <br>
-    <div>
-      <label for="coverLetter">Upload Cover Letter:</label>
-      <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx" required>
+    <div class="row">
+      <input type="submit" value="Save">
     </div>
-    <br>
-    <div>
-      <label for="link">Link:</label>
-      <input type="url" id="link" name="link" placeholder="Enter link (if any)" pInputText class="w-full mb-3">
-    </div>
-    <button type="submit">Save</button>
   </form>
 </div>
+
+

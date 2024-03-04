@@ -1,39 +1,75 @@
-<!-- user-experience.component.html -->
-<div class="user-experience">
-  <h2>Experience</h2>
-  <form>
-    <div>
-      <label for="employerName">Employer Name:</label>
-      <input type="text" id="employerName" name="employerName" pInputText class="w-full mb-3" required>
+<div class="container">
+  <h2>EXPERIENCE</h2>
+  <form action="action_page.php">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="employer">Employer Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="employer" name="employer" placeholder="Enter employer name..">
+      </div>
     </div>
-    <div>
-      <label for="jobTitle">Job Title:</label>
-      <input type="text" id="jobTitle" name="jobTitle" pInputText class="w-full mb-3" required>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="empAddress">Employer Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="empAddress" name="empAddress" placeholder="Address Line 1">
+        <input type="text" id="empAddress" name="empAddress" placeholder="Address Line 2">
+        <input type="text" id="empAddress" name="empAddress" placeholder="Address Line 3">
+      </div>
     </div>
-    <div>
-      <label for="startDate">Start Date:</label>
-      <input type="date" id="startDate" name="startDate" required>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="job">Job Title</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="job" name="job" placeholder="Enter previous job title..">
+      </div>
     </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="startDate">Start Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="startDate" name="startDate" >
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="endDate">End Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="endDate" name="endDate" >
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="salary">Salary</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="salary" name="salary" placeholder="Enter last basic salary..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="jobdesc">Job Description</label>
+      </div>
+      <div class="col-75">
+        <textarea id="jobdesc" name="jobdesc" placeholder="Write job description.." style="height:200px"></textarea>
+      </div>
+    </div>
+
     <br>
-    <div>
-      <label for="endDate">End Date:</label>
-      <input type="date" id="endDate" name="endDate" >
+    <div class="row">
+      <input type="submit" value="Save">
     </div>
-    <br>
-    <div>
-      <label for="employerAddress">Employer Address:</label>
-      <input type="text" id="employerAddress" name="employerAddress" pInputText class="w-full mb-3">
-    </div>
-    <div>
-      <label for="salary">Salary:</label>
-      <input type="number" id="salary" name="salary" pInputText class="w-full mb-3">
-    </div>
-    <div>
-      <label for="jobDescription">Job Description:</label>
-      <textarea id="jobDescription" name="jobDescription" pInputText class="w-full mb-3" rows="4"></textarea>
-    </div>
-    <button type="submit">Save</button>
   </form>
 </div>
-
-
