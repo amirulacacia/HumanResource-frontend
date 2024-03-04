@@ -1,46 +1,30 @@
-<!-- user-education.component.html -->
-<div class="user-education">
-  <h2>User Education</h2>
-  <form>
-    <div>
-      <label for="educationLevel">Education Level:</label>
-      <select id="educationLevel" name="educationLevel" required>
-        <option value="" disabled selected>Select Education Level</option>
-        <option value="SPM">High School Diploma</option>
-        <option value="Diploma">High School Diploma</option>
-        <option value="Associate Degree">Associate Degree</option>
-        <option value="Bachelor's Degree">Bachelor's Degree</option>
-        <option value="Master's Degree">Master's Degree</option>
-        <option value="PhD">PhD</option>
-      </select>
+<div class="container">
+  <h2>EDUCATION</h2>
+  <form action="action_page.php">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="level">Education Level</label>
+      </div>
+      <div class="col-75">
+        <select id="level" name="level">
+          <option value="" disabled selected>Select Education Level</option>
+          <option value="SPM">High School Diploma</option>
+          <option value="Diploma">High School Diploma</option>
+          <option value="Associate Degree">Associate Degree</option>
+          <option value="Bachelor's Degree">Bachelor's Degree</option>
+          <option value="Master's Degree">Master's Degree</option>
+          <option value="PhD">PhD</option>
+        </select>
+      </div>
     </div>
-    <br>
-    <div>
-      <label for="major">Major:</label>
-      <input type="text" id="major" name="major" pInputText class="w-full mb-3" required>
-    </div>
-    <div>
-      <label for="schoolName">School Name:</label>
-      <input type="text" id="schoolName" name="schoolName" pInputText class="w-full mb-3" required>
-    </div>
-    <div>
-      <label for="startDate">Start Date:</label>
-      <input type="date" id="startDate" name="startDate" required>
-    </div>
-    <br>
-    <div>
-      <label for="endDate">End Date:</label>
-      <input type="date" id="endDate" name="endDate" required>
-    </div>
-    <br>
-    <div>
-      <label for="cgpa">CGPA:</label>
-      <input type="text" id="cgpa" name="cgpa" pInputText class="w">
-    </div>
-    <br>
-    <div>
-      <label for="graduationYear">Graduation Year:</label>
-      <select id="graduationYear" name="graduationYear" required>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="grad">Graduation Year</label>
+      </div>
+      <div class="col-75">
+        <select id="grad" name="grad">
         <option value="" disabled selected>Select Graduation Year</option>
         <option value="2025">2015</option>
         <option value="2025">2016</option>
@@ -52,9 +36,58 @@
         <option value="2022">2022</option>
         <option value="2023">2023</option>
         <option value="2024">2024</option>
-      </select>
+        </select>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="school">Educational Institution</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="school" name="school" placeholder="Enter Educational Institution Name..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="major">Major</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="major" name="major" placeholder="Enter major..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="startDate">Start Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="startDate" name="startDate" >
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="endDate">End Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="endDate" name="endDate" >
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="cgpa">CGPA</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="cgpa" name="cgpa" placeholder="Enter CGPA..">
+      </div>
+    </div>
+
     <br>
-    <button type="submit">Save</button>
+    <div class="row">
+      <input type="submit" value="Save">
+    </div>
   </form>
 </div>
