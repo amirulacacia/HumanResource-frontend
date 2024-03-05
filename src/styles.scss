@@ -6,6 +6,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
 @import "primeflex/primeflex.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
 
 // // Variable overrides first
 // $primary: #900;
@@ -69,3 +72,10 @@ $my-theme: mat.define-light-theme(
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($my-theme);
+
+.form-control {
+    border: 1px solid #4a7fb4 !important;
+}
+.form-select {
+    border: 1px solid #4a7fb4 !important;
+}
