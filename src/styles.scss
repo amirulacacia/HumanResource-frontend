@@ -6,6 +6,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
 @import "primeflex/primeflex.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+<<<<<<< HEAD
+
+=======
+>>>>>>> 18ac299cfa705905f2a6ecb6e7f05de90ffa6dde
 
 // // Variable overrides first
 // $primary: #900;
@@ -18,6 +24,7 @@
 @include mat.core();
 
 // Then import Bootstrap
+@import 'bootstrap-icons/font/bootstrap-icons.css';
 @import "../node_modules/bootstrap/scss/bootstrap";
 html,
 body { 
@@ -69,3 +76,10 @@ $my-theme: mat.define-light-theme(
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($my-theme);
+
+.form-control {
+    border: 1px solid #4a7fb4 !important;
+}
+.form-select {
+    border: 1px solid #4a7fb4 !important;
+}
