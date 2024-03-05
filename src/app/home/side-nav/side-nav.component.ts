@@ -20,15 +20,21 @@ export class SideNavComponent {
 
   menuItems = signal<MenuItem[]>([
     {
-      icon: 'person',
-      label: 'Log In',
-      route: 'login'
+      icon: 'account_box',
+      label: 'Applicant',
+      route: 'applicant-login'
     },
     {
-      icon: 'person',
-      label: 'Register',
-      route: 'signup'
-    }
+      icon: 'admin_panel_settings',
+      label: 'Employee',
+      route: 'employee-login'
+    },
+    {
+      icon: 'phone',
+      label: 'Contact',
+      route: 'contact'
+    },
+
   ]);
 
   profilePicSize = computed(() => this.sideNavCollapsed() ? '32' : '100');

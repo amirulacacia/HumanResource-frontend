@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Employee } from '../model/Employee';
+import { Applicant } from '../model/Applicant';
 
 @Injectable({
   providedIn: 'root'
 })
-export class EmployeeService {
+export class ApplicantService {
 
-  serverHost = "http://localhost:8080/employee";
+  serverHost = "http://localhost:8080/applicant";
 
   constructor(private http: HttpClient) { }
 
@@ -16,7 +16,7 @@ export class EmployeeService {
     return this.http.post(this.serverHost + "/login", input);
   }
 
-  registerEmployee(input: any): Observable<any> {
+  registerApplicant(input: any): Observable<any> {
     return this.http.post(this.serverHost + "/register", input);
   }
 }
