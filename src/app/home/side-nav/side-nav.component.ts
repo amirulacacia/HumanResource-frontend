@@ -20,14 +20,14 @@ export class SideNavComponent {
 
   menuItems = signal<MenuItem[]>([
     {
-      icon: 'dashboard',
-      label: 'Dashboard',
-      route: 'footer'
+      icon: 'person',
+      label: 'Log In',
+      route: 'login'
     },
     {
-      icon: 'phone',
-      label: 'Contact',
-      route: 'header'
+      icon: 'person',
+      label: 'Register',
+      route: 'signup'
     }
   ]);
 
