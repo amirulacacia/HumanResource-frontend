@@ -1,4 +1,4 @@
-<mat-toolbar class="mat-elevation-z3">
+<!-- <mat-toolbar class="mat-elevation-z3">
     <button mat-icon-button (click)="collapsed.set(!collapsed())">
         <mat-icon>menu</mat-icon>
     </button>
@@ -10,6 +10,16 @@
     <mat-sidenav-content class="content" [style.margin-left]="sidenavWidth()">
         <router-outlet />
     </mat-sidenav-content>
-</mat-sidenav-container>
+</mat-sidenav-container> -->
 
 
+<div>
+    <app-header [pageTitle]="'Frontend authenticated with JWT'" [logoSrc]="'assets/picture/profile.jpg'" />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+            <app-content />
+        </div>
+      </div>
+    </div>
+  </div>

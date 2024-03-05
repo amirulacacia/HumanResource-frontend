@@ -27,7 +27,7 @@ export class SideNavComponent {
     {
       icon: 'phone',
       label: 'Contact',
-      route: 'header'
+      route: 'auth'
     }
   ]);
 
