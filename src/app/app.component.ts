@@ -23,7 +23,7 @@ import { SideNavComponent } from "./home/side-nav/side-nav.component";
     ]
 })
 export class AppComponent {
-  // title = 'hrApplication';
+  title = 'hrApplication';
 
   collapsed = signal(false);
 
