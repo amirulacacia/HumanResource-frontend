@@ -23,6 +23,9 @@ import { SideNavComponent } from "./home/side-nav/side-nav.component";
     ]
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   // title = 'hrApplication';
 
   collapsed = signal(false);
