@@ -9,11 +9,21 @@ import { EmployeeLoginComponent } from './home/employee-login/employee-login.com
 import { ApplicantLoginComponent } from './home/applicant-login/applicant-login.component';
 import { SideNavComponent } from './home/side-nav/side-nav.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { JobDetailsComponent } from './user/job-details/job-details.component';
+import { JobRegistrationComponent } from './user/job-registration/job-registration.component';
 
 export const routes: Routes = [
   { 
+    path: 'job-registartion', 
+    component: JobRegistrationComponent,
+  },
+  { 
     path: 'joblisting', 
     component: JoblistingComponent 
+  },
+  { 
+    path: 'job-details', 
+    component: JobDetailsComponent 
   },
   { 
     path: 'contact', 

@@ -1,0 +1,74 @@
+.container {
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    text-align: center; /* Center text within the container */
+}
+
+h2 {
+    color: #333; /* Adjust color as needed */
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 30px; /* Add some space below the heading */
+}
+
+.form-label {
+    font-weight: bold; /* Make labels bold */
+}
+
+.col-25 {
+    text-align: right; /* Align labels to the right */
+}
+
+.col-75 {
+    text-align: left; /* Align input fields to the left */
+}
+
+.form-control {
+    width: 100%; /* Make input fields fill the entire width of their container */
+    margin-top: 5px; /* Add some space above input fields */
+    margin-bottom: 15px; /* Add some space below input fields */
+}
+
+select.form-select {
+    width: 100%; /* Make select elements fill the entire width of their container */
+    margin-top: 5px; /* Add some space above select elements */
+    margin-bottom: 15px; /* Add some space below select elements */
+}
+
+textarea.form-control {
+    resize: vertical; /* Allow textarea to be vertically resizable */
+    width: 100%; /* Make textarea fill the entire width of its container */
+    margin-top: 5px; /* Add some space above textarea */
+    margin-bottom: 15px; /* Add some space below textarea */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Blue color for the submit button */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 16px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+    width: 120px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+      /* Float the button to the right */
+    margin-top: 60px; 
+    display: inline-block;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.row {
+    display: flex; /* Use flexbox for layout */
+    margin-bottom: 8px; /* Add some space between rows */
+}
+
+.col-25,
+.col-75 {
+    flex: 0 0 25%; /* Set columns to 25% width */
+}
+
+.col-75 {
+    flex: 0 0 75%; /* Set columns to 75% width */
+}
