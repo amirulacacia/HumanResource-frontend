@@ -58,6 +58,14 @@ export const routes: Routes = [
     component: EmployeeComponent, 
   },
   { 
+    path: 'jobdetails', 
+    component: JobDetailsComponent, 
+  },
+  { 
+    path: 'jobregister', 
+    component: JobRegistrationComponent, 
+  },
+  { 
     path: '', 
     redirectTo: '/home', 
     pathMatch: 'full' 

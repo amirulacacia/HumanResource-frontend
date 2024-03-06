@@ -1,40 +1,31 @@
 <div class="container">
     <h2>JOB REGISTRATION</h2>
-    <form class="row g-3 needs-validation" novalidate #jobForm="">
-
-        <div class="row">
-            <div class="col-25">
-              <label for="title">Job Title</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="title" name="jobTitle" class="form-control" required>
-            </div>
-          </div>
+    <form [formGroup]="registerJobForm" class="row g-3 needs-validation" novalidate #jobForm="">
 
       <div class="row">
         <div class="col-25">
           <label for="jobPosition">Job Position</label>
         </div>
         <div class="col-75">
-          <input type="text" id="jobPosition" name="jobPosition" class="form-control" required>
+          <input type="text" required formControlName="jobPosition" id="jobPosition" name="jobPosition" class="form-control" required>
           
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-25">
           <label for="CompanyName">Company Name </label>
         </div>
         <div class="col-75">
-          <input type="text" id="jobPosition" name="jobPosition" class="form-control" required>
+          <input type="text" required formControlName="email" id="jobPosition" name="jobPosition" class="form-control" required>
         </div>
-      </div>
+      </div> -->
 
       <div class="row">
         <div class="col-25">
           <label for="vacancyCount">Vacancy Count</label>
         </div>
         <div class="col-75">
-          <input type="number" id="vacancyCount" name="vacancyCount" class="form-control" min="1" required>
+          <input type="number" required formControlName="vacancy" id="vacancy" name="vacancyCount" class="form-control" min="1" required>
         </div>
       </div>
 
@@ -43,7 +34,7 @@
           <label for="location">Location</label>
         </div>
         <div class="col-75">
-          <select class="form-select" id="location" name="location" required>
+          <select class="form-select" id="location" name="location" required formControlName="location" >
             <option value="" disabled selected>Select Location</option>
             <option value="All States in Malaysia">All States in Malaysia</option>
             <option value="Johor">Johor</option>
@@ -69,7 +60,7 @@
           <label for="salaryOffer">Salary Offer</label>
         </div>
         <div class="col-75">
-          <input type="number" id="salaryOffer" name="salaryOffer" class="form-control" required>
+          <input type="number" required formControlName="salaryOffer" id="salaryOffer" name="salaryOffer" class="form-control" required>
         </div>
       </div>
 
@@ -78,16 +69,7 @@
           <label for="jobDescription">Job Description</label>
         </div>
         <div class="col-75">
-          <textarea id="jobDescription" name="jobDescription" class="form-control" rows="3" required></textarea>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-25">
-          <label for="uploadDate">Upload Date</label>
-        </div>
-        <div class="col-75">
-          <input type="date" id="uploadDate" name="uploadDate" class="form-control" required>
+          <textarea id="jobDescription" required formControlName="jobDescription" name="jobDescription" class="form-control" rows="3" required></textarea>
         </div>
       </div>
       
@@ -96,14 +78,15 @@
           <label for="closingDate">Closing Date</label>
         </div>
         <div class="col-75">
-          <input type="date" id="closingDate" name="closingDate" class="form-control" required>
+          <input type="date" required formControlName="closingDate" id="closingDate" name="closingDate" class="form-control" required>
         </div>
       </div>
 
       
       
       <div class="row">
-        <input type="submit" value="Submit">
+        <button pButton pRipple type="submit" (click)="onSubmit()" label="Submit" icon="pi pi-user" class="w-full"></button>
+        <!-- <input type="submit" value="Submit"> -->
       </div>
     </form>
 </div>

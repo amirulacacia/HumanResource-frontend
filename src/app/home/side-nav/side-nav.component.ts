@@ -34,6 +34,37 @@ export class SideNavComponent {
       label: 'Contact',
       route: 'contact'
     },
+    {
+      icon: "info",
+      label: "Information",
+      route: "user"
+    },
+    {
+      icon: "perm_identity",
+      label: "Employee List",
+      route: "employee"
+    },
+    {
+      icon: "description",
+      label: "Applicant Forms",
+      route: "applicant"
+    },
+    {
+      icon: "work",
+      label: "Job List",
+      route: "joblisting"
+    },
+    {
+      icon: "work",
+      label: "Job Details",
+      route: "jobdetails"
+    },
+    {
+      icon: "work",
+      label: "Job Register",
+      route: "jobregister"
+    }
+
 
   ]);
 
