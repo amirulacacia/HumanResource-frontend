@@ -40,17 +40,27 @@ export class SideNavComponent {
       route: "user"
     },
     {
-      icon: "perm_identity",
+      icon: "people",
       label: "Employee List",
       route: "employee"
     },
     {
-      icon: "description",
-      label: "Applicant Forms",
-      route: "applicant"
+      icon: "next_week",
+      label: "Job Register",
+      route: "jobregister"
     },
     {
-      icon: "work",
+      icon: "event_note",
+      label: "Interview Schedule",
+      route: "schedule-interview"
+    },
+    {
+      icon: "event_available",
+      label: "Interview Status",
+      route: "interview-status"
+    },
+    {
+      icon: "shop_two",
       label: "Job List",
       route: "joblisting"
     },
@@ -60,11 +70,10 @@ export class SideNavComponent {
       route: "jobdetails"
     },
     {
-      icon: "work",
-      label: "Job Register",
-      route: "jobregister"
-    }
-
+      icon: "description",
+      label: "Applicant Forms",
+      route: "applicant"
+    },
 
   ]);
 
