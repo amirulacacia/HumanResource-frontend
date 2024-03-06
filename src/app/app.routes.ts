@@ -11,11 +11,19 @@ import { SideNavComponent } from './home/side-nav/side-nav.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { JobDetailsComponent } from './user/job-details/job-details.component';
 import { JobRegistrationComponent } from './user/job-registration/job-registration.component';
+import { ScheduleInterviewComponent } from './schedule-interview/schedule-interview.component';
+
+
 
 export const routes: Routes = [
   { 
     path: 'job-registartion', 
     component: JobRegistrationComponent,
+  },
+ 
+  { 
+    path: 'schedule-interview', 
+    component: ScheduleInterviewComponent,
   },
   { 
     path: 'joblisting', 
