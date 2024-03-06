@@ -1,0 +1,116 @@
+ Navbar styles
+ .navbar {
+   margin-bottom: 20px;
+   }
+
+// // Round button styles
+// .round-button {
+//   border-radius: 20px;
+// }
+
+// // Card styles
+// .card {
+//   border-radius: 10px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+// }
+
+// .card-body {
+//   text-align: center;
+// }
+
+// // Container styles
+// .container-fluid {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100%;
+// }
+
+// // Job container styles
+// .job {
+//   margin-top: 20px;
+// }
+
+// Filter container styles
+.filter {
+  margin-top: 20px;
+}
+
+// // Search bar styles
+// .logoContainer {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 10px;
+//   border: 1px solid #ced4da;
+//   border-radius: 5px;
+// }
+
+#searchIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.sugginput {
+  flex: 1;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.pipe1 {
+  border-left: 1px solid #ced4da;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search:hover {
+  background-color: #0056b3;
+}
+
+// Job card styles
+.compo_logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.pt-1 {
+  padding-top: 10px;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.small {
+  font-size: smaller;
+}
+
+.fa-bookmark {
+  color: #6c757d;
+  cursor: pointer;
+}
+
+// Larger and bold job titles for desktop
+.card-body h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 300px) {
+  // Adjust styles for smaller screens here
+}

@@ -1,0 +1,14 @@
+<mat-toolbar class="mat-elevation-z3">
+    <button mat-icon-button (click)="collapsed.set(!collapsed())">
+        <mat-icon>menu</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav opened mode="side" [style.width]="sidenavWidth()">
+        <app-side-nav [collapsed]="collapsed()"></app-side-nav>
+    </mat-sidenav>
+    <mat-sidenav-content class="content" [style.margin-left]="sidenavWidth()">
+        <img src="/assets/picture/profile.jpg" />
+        <router-outlet name="home"/>
+    </mat-sidenav-content>
+</mat-sidenav-container>

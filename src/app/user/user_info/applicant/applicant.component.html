@@ -1,0 +1,635 @@
+<div class="container">
+    <h3>USER INFORMATION</h3><br>
+    <form action="action_page.php">
+
+        <div class="row">
+            <div class="col-25">
+              <label for="title">Title</label>
+            </div>
+            <div class="col-75">
+              <select id="title" name="title">
+                <option value="" disabled selected>Select Title</option>
+                <option value="Mr.">Mr</option>
+                <option value="Mrs.">Mrs</option>
+                <option value="Ms">Ms</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr">Dr</option>
+                <option value="Prof">Prof</option>
+              </select>
+            </div>
+        </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="mname">Middle Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="mname" name="middlename" placeholder="Your middle name..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Your email..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="contactNo">Contact Number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="contactNo" name="contactNo" placeholder="Your contact number..">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Save">
+      </div>
+    </form>
+  </div>
+
+  <p></p>
+
+  <div class="container">
+    <h3>USER DIVERSITY</h3><br>
+    <form action="action_page.php">
+
+        <div class="row">
+            <div class="col-25">
+              <label for="gender">Gender</label>
+            </div>
+            <div class="col-75">
+              <select id="gender" name="gender">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="birthDate">Birth Date</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="birthDate" name="birthDate" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="status">Marital Status</label>
+            </div>
+            <div class="col-75">
+              <select id="status" name="status">
+                <option value="" disabled selected>Select Marital Status</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorced">Divorced</option>
+                <option value="Widowed">Widowed</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Save">
+          </div>
+    </form>
+  </div>
+
+  <p></p>
+
+  <div class="container">
+    <h3>ADDRESS</h3><br>
+    <form action="action_page.php">
+
+      <div class="row">
+        <div class="col-25">
+          <label for="address">Address</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="address" name="address" placeholder="Address Line 1">
+          <input type="text" id="address" name="address" placeholder="Address Line 2">
+          <input type="text" id="address" name="address" placeholder="Address Line 3">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="city">City</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="city" name="city" placeholder="Enter city..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="poscode">Poscode</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="poscode" name="poscode" placeholder="Enter poscode..">
+        </div>
+      </div>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="state">State</label>
+            </div>
+            <div class="col-75">
+              <select id="state" name="state">
+                <option value="" disabled selected>Select State</option>
+                <option value="JHR">Johor</option>
+                <option value="KDH">Kedah</option>
+                <option value="KTN">Kelantan</option>
+                <option value="MLK">Melaka</option>
+                <option value="NSN">Negeri Sembilan</option>
+                <option value="PHG">Pahang</option>
+                <option value="PRK">Perak</option>
+                <option value="PLS">Perlis</option>
+                <option value="PNG">Penang</option>
+                <option value="SBH">Sabah</option>
+                <option value="SWK">Sarawak</option>
+                <option value="SGR">Selangor</option>
+                <option value="TRG">Kuala Terengganu</option>
+                <option value="KUL">Kuala Lumpur</option>
+                <option value="LBN">Labuan</option>
+                <option value="PJY">Putrajaya</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="" disabled selected>Select Country</option>
+                <option value="SG">Singapore</option>
+                <option value="ID">Indonesia</option>
+                <option value="TH">Thailand</option>
+                <option value="BN">Brunei</option>
+                <option value="PH">Philippines</option>
+                <option value="VN">Vietnam</option>
+                <option value="KH">Cambodia</option>
+                <option value="LA">Laos</option>
+                <option value="MY">Malaysia</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Save">
+          </div>
+    </form>
+  </div>
+
+  <p></p>
+
+  <div class="container">
+    <h3>EDUCATION</h3><br>
+    <form action="action_page.php">
+
+      <div class="row">
+        <div class="col-25">
+          <label for="level">Education Level</label>
+        </div>
+        <div class="col-75">
+          <select id="level" name="level">
+            <option value="" disabled selected>Select Education Level</option>
+            <option value="SPM">High School Diploma</option>
+            <option value="Diploma">High School Diploma</option>
+            <option value="Associate Degree">Associate Degree</option>
+            <option value="Bachelor's Degree">Bachelor's Degree</option>
+            <option value="Master's Degree">Master's Degree</option>
+            <option value="PhD">PhD</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="grad">Graduation Year</label>
+        </div>
+        <div class="col-75">
+          <select id="grad" name="grad">
+          <option value="" disabled selected>Select Graduation Year</option>
+          <option value="2025">2015</option>
+          <option value="2025">2016</option>
+          <option value="2025">2017</option>
+          <option value="2025">2018</option>
+          <option value="2025">2019</option>
+          <option value="2025">2020</option>
+          <option value="2025">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="school">Educational Institution</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="school" name="school" placeholder="Enter Educational Institution Name..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="major">Major</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="major" name="major" placeholder="Enter major..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="startDate">Start Date</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="startDate" name="startDate" >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="endDate">End Date</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="endDate" name="endDate" >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="cgpa">CGPA</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="cgpa" name="cgpa" placeholder="Enter CGPA..">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Save">
+      </div>
+    </form>
+  </div>
+
+  <p></p>
+
+  <div class="container">
+    <h3>SKILL</h3><br>
+    <form action="action_page.php">
+
+      <div class="row">
+        <div class="col-25">
+          <label for="skill">Skill 1</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="skill" name="skill" placeholder="Enter skill 1..">
+        </div>
+      </div>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="skillLevel"></label>
+            </div>
+            <div class="col-75">
+              <select id="skillLevel" name="skillLevel">
+                <option value="" disabled selected>Select Skill Level</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Expert">Expert</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="skill">Skill 2</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="skill" name="skill" placeholder="Enter skill..">
+            </div>
+          </div>
+    
+            <div class="row">
+                <div class="col-25">
+                  <label for="skillLevel"></label>
+                </div>
+                <div class="col-75">
+                  <select id="skillLevel" name="skillLevel">
+                    <option value="" disabled selected>Select Skill Level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="Expert">Expert</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="skill">Skill 3</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="skill" name="skill" placeholder="Enter skill 3..">
+                </div>
+              </div>
+        
+                <div class="row">
+                    <div class="col-25">
+                      <label for="skillLevel"></label>
+                    </div>
+                    <div class="col-75">
+                      <select id="skillLevel" name="skillLevel">
+                        <option value="" disabled selected>Select Skill Level</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Expert">Expert</option>
+                      </select>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <input type="submit" value="Save">
+                  </div>
+    </form>
+  </div>
+
+  <p></p>
+
+  <div class="container">
+    <h3>EXPERIENCE</h3><br>
+    <form action="action_page.php">
+
+      <div class="row">
+        <div class="col-25">
+          <label for="employer">Employer Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="employer" name="employer" placeholder="Enter employer name..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="empAddress">Employer Address</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="empAddress" name="empAddress" placeholder="Address Line 1">
+          <input type="text" id="empAddress" name="empAddress" placeholder="Address Line 2">
+          <input type="text" id="empAddress" name="empAddress" placeholder="Address Line 3">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="job">Job Title</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="job" name="job" placeholder="Enter previous job title..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="startDate">Start Date</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="startDate" name="startDate" >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="endDate">End Date</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="endDate" name="endDate" >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="salary">Salary</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="salary" name="salary" placeholder="Enter last basic salary..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="jobdesc">Job Description</label>
+        </div>
+        <div class="col-75">
+          <textarea id="jobdesc" name="jobdesc" placeholder="Write job description.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Save">
+      </div>
+    </form>
+  </div>
+
+  <p></p>
+
+  <div class="container">
+    <h3>CERTIFICATE</h3><br>
+    <form action="action_page.php">
+
+      <div class="row">
+        <div class="col-25">
+          <label for="certificate">Certificate</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="certificate" name="certificate" placeholder="Enter certificate name (if any)">
+        </div>
+      </div>
+      <br>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="upload"></label>
+            </div>
+            <div class="col-75">
+              <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+              </form>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Save">
+          </div>
+    </form>
+  </div>
+  
+  <p></p>
+
+  <div class="container">
+    <h3>REFERENCE</h3><br>
+    <form action="action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Reference Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="rname" name="rname" placeholder="Enter reference name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="position">Position</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="position" name="position" placeholder="Enter reference position..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Enter reference email..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="contact">Contact Number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="contact" name="contact" placeholder="Enter reference contact number..">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Save">
+      </div>
+    </form>
+  </div>
+
+  <p></p>
+
+  <div class="container">
+    <h3>DOCUMENTS</h3><br>
+    <form action="action_page.php">
+
+        <div class="row">
+            <div class="col-25">
+              <label for="resume">Resume</label>
+            </div>
+            <div class="col-75">
+              <form action="/action_page.php">
+                <input type="file" id="resume" name="resume">
+              </form>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="coverletter">Cover Letter</label>
+            </div>
+            <div class="col-75">
+              <form action="/action_page.php">
+                <input type="file" id="coverletter" name="coverletter">
+              </form>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="link">Link</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="link" name="link" placeholder="Link 1 (if any)">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" value="Save">
+          </div>
+    </form>
+  </div>
+
+  <p></p>
+
+  <div class="container">
+    <h3>ADDITIONAL INFORMATION</h3><br>
+    <form action="action_page.php">
+  
+      <div class="row">
+        <div class="col-25">
+          <label for="relocation">Relocation</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="relocation" name="relocation" placeholder="Enter YES / NO">
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-25">
+          <label for="expectedSalary">Expected Salary</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="expectedSalary" name="expectedSalary" placeholder="Enter your expected salary..">
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-25">
+          <label for="noticePeriod">Notice Period</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="noticePeriod" name="noticePeriod" placeholder="Enter your notice period..">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Save">
+      </div>
+    </form>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

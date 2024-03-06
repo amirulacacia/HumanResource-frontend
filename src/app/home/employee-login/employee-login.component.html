@@ -1,0 +1,78 @@
+
+<div class="container">
+  <h1>Employee</h1>
+    <div class="overlay">
+      <div class="form-container">
+  
+        <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
+  
+          <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button [ngClass]="active == 'login' ? 'nav-link active' : 'nav-link'" id="tab-login"
+                (click)="onLoginTab()">Login</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button [ngClass]="active == 'register' ? 'nav-link active' : 'nav-link'" id="tab-register"
+                (click)="onRegisterTab()">Register</button>
+            </li>
+          </ul>
+  
+          <div class="tab-content">
+            <div [ngClass]="active == 'login' ? 'tab-pane fade show active' : 'tab-pane fade'">
+              <form [formGroup]="loginEmployeeForm">
+                <label for="email" class="block text-900 font-medium mb-2">Email</label>
+                <input id="email" required formControlName="email" type="text" placeholder="Email address" pInputText class="w-full mb-3">
+  
+                <label for="password" class="block text-900 font-medium mb-2">Password</label>
+                <input id="password" required formControlName="password" type="password" placeholder="Password" pInputText class="w-full mb-3">
+  
+                <div class="flex align-items-center justify-content-between mb-3">
+                </div>
+  
+                <button pButton pRipple type="submit" (click)="onLogin()" label="Sign In" icon="pi pi-user" class="w-full"></button>
+              </form>
+            </div>
+  
+            <div [ngClass]="active == 'register' ? 'tab-pane fade show active' : 'tab-pane fade'">
+              <form [formGroup]="registerEmployeeForm">
+                <label for="email1" class="block text-900 font-medium mb-2">Email</label>
+                <input id="email1" required formControlName="email" type="text" placeholder="Email address" pInputText class="w-full mb-3">
+  
+                <label for="password1" class="block text-900 font-medium mb-2">Password</label>
+                <input id="password1" required formControlName="password" type="password" placeholder="Password" pInputText class="w-full mb-3">
+  
+                <div class="flex align-items-center justify-content-between mb-3">
+                </div>
+  
+                <button pButton pRipple type="submit" (click)="onSignup()" label="Sign Up" icon="pi pi-user" class="w-full"></button>
+              </form>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="imgcontainer">
+    <img src="assets/icons/logo.png" alt="Logo" class="logo">
+  </div>
+  
+  <div class="container">
+    <label for="email"><b>Email</b></label>
+    <input type="text" id="email" placeholder="Enter Username" name="email" required formControlName="email">
+  
+    <label for="password"><b>Password</b></label>
+    <input type="password" id="password" placeholder="Enter Password" name="password" required formControlName="password"
+      maxlength="20">
+  
+    <p-button label="Login" [raised]="true" severity="primary" (onClick)="onSubmit()" type="submit">Login</p-button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div> -->
