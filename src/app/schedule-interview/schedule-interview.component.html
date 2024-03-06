@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule Interview Session</title>
+</head>
+<body>
+<div class="container">
+    <h2>Schedule Interview Session</h2>
+    <form class="row g-3 needs-validation" novalidate #interviewForm="">
+        <div class="row">
+            <div class="col-25">
+              <label for="date">Date</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="date" name="date" class="form-control" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="time">Time</label>
+            </div>
+            <div class="col-75">
+              <input type="time" id="time" name="time" class="form-control" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="platform">Platform</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="platform" name="platform" class="form-control" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="location">Location</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="location" name="location" class="form-control" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="interviewStage">Interview Stage</label>
+            </div>
+            <div class="col-75">
+              <select class="form-select" id="interviewStage" name="interviewStage" required>
+                <option value="" disabled selected>Select Stage</option>
+                <option value="Stage 1">Stage 1</option>
+                <option value="Stage 2">Stage 2</option>
+                <option value="Stage 3">Stage 3</option>
+                <option value="Stage 4">Stage 4</option>
+                <option value="Stage 5">Stage 5</option>
+              </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="status">Status</label>
+            </div>
+            <div class="col-75">
+              <select class="form-select" id="status" name="status" required>
+                <option value="" disabled selected>Select Status</option>
+                <option value="Pass">Pass</option>
+                <option value="Failed">Failed</option>
+              </select>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>
